@@ -33,7 +33,12 @@ public class TrainReservationController {
 	public RecentTicketBooking getRecentTicketHistory(@PathVariable Long userId) throws Exception{
 		
 		RecentTicketBooking recentTicketBooking = ticketBookingService.getRecentTicketHistory(userId);
+		
+		logger.info("Controller");
+		
 		return recentTicketBooking;
+		
+		
 		
 		
 		
